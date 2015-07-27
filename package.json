@@ -1,0 +1,43 @@
+{
+  "name": "essential-ui",
+  "description": "A collection of React components",
+  "main": "dist/index.js",
+  "version": "0.0.0",
+  "author": "Dominic Adams",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/domadams/EssentialUI"
+  },
+  "scripts": {
+    "prepublish": "babel index.js ./lib -d ./dist"
+  },
+  "engines": {
+    "node": ">=0.12.0"
+  },
+  "dependencies": {
+    "lodash": "^3.10.0",
+    "react": "^0.13.3"
+  },
+  "devDependencies": {
+    "babel": "^5.8.9",
+    "babel-core": "^5.8.9",
+    "babel-eslint": "^4.0.5",
+    "babel-runtime": "^5.8.9",
+    "eslint": "^0.24.1",
+    "eslint-plugin-react": "^3.0.0",
+    "gulp": "^3.9.0",
+    "gulp-eslint": "^0.15.0",
+    "gulp-util": "^3.0.6"
+  },
+  "peerDependencies": {
+    "react": "^0.13.0 || 0.14.0-beta1"
+  },
+  "keywords": [
+    "react",
+    "react-component",
+    "ui",
+    "framework",
+    "element"
+  ]
+}

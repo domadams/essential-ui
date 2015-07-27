@@ -25,3 +25,17 @@ build/Release
 # Dependency directory
 # https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git
 node_modules
+
+# Users Environment Variables
+.lock-wscript
+.idea
+*.iml
+
+# npm will output this on error
+npm-debug.log
+
+# OSX likes to add these unnecessarily
+.DS_Store
+
+# swap files
+*.swp
