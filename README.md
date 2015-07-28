@@ -16,6 +16,7 @@ Once you have installed essential-ui as a dependency you can import it into the 
 
 You can then use this in your JSX like any other component
 
+``` js
     class SimpleComponent extends React.Component {
         render(){
             return (
@@ -27,6 +28,7 @@ You can then use this in your JSX like any other component
     }
 
     export default Button;
+```
 
 ## Getting Started for Developers
 
