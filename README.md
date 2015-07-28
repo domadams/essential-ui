@@ -8,26 +8,22 @@ You can install essential-ui using npm:
     npm install -g essential-ui
 
 ### Usage
-Once you have installed essential-ui as a dependency you can import it into the component you want to use it in
+Once you have installed essential-ui as a dependency you can import it into the component you want to use it in. You can then use this in your JSX like any other component
 
 ``` js
-  import {Button} from 'essential-ui';
-```
+import {Button} from 'essential-ui';
 
-You can then use this in your JSX like any other component
-
-``` js
-    class SimpleComponent extends React.Component {
-        render(){
-            return (
-                <div>
-                    <Button size="lg" type="primary" text="Hello!" />
-                </div>
-            );
-        }
+class SimpleComponent extends React.Component {
+    render(){
+        return (
+            <div>
+                <Button size="lg" type="primary" text="Hello!" />
+            </div>
+        );
     }
+}
 
-    export default SimpleComponent;
+export default SimpleComponent;
 ```
 
 ## Getting Started for Developers
