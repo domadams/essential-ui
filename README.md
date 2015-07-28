@@ -27,7 +27,7 @@ You can then use this in your JSX like any other component
         }
     }
 
-    export default Button;
+    export default SimpleComponent;
 ```
 
 ## Getting Started for Developers
