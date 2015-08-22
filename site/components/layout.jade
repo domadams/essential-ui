@@ -1,0 +1,11 @@
+doctype html
+html.no-js(lang=language xml:lang=language xmlns='http://www.w3.org/1999/xhtml')
+    head
+        title Essential UI| Home
+        meta(http-equiv='X-UA-Compatible' content='IE=EDGE')
+        meta(httpEquiv='Content-type' content='text/html;charset=utf-8')
+        meta(name='viewport' content='width=device-width, initial-scale=1')
+    body
+        div#content!=content
+        script(type='application/json' id='initial-data')!=JSON.stringify(data)
+        script(type='text/javascript' src='/app.js')
