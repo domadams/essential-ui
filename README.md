@@ -5,7 +5,7 @@ A UI Toolkit for React.js Websites and Apps
 
 You can install essential-ui using npm:
 
-    npm install -g essential-ui
+    npm install essential-ui --save
 
 ### Usage
 Once you have installed essential-ui as a dependency you can import it into the component you want to use it in. You can then use this in your JSX like any other component

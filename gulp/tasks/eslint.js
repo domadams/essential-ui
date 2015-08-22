@@ -13,6 +13,7 @@ export default function(gulp) {
             .src([
                 '**/*.js',
                 '!node_modules/**/*.js',
+                '!site/node_modules/**/*.js',
                 '!dist/**/*.js'
             ])
             // eslint() attaches the lint output to the eslint property
