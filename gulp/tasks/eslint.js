@@ -14,6 +14,7 @@ export default function(gulp) {
                 '**/*.js',
                 '!node_modules/**/*.js',
                 '!site/node_modules/**/*.js',
+                '!site/public/**/*.js',
                 '!dist/**/*.js'
             ])
             // eslint() attaches the lint output to the eslint property

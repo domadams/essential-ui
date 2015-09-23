@@ -19,7 +19,7 @@ let content = document.getElementById('content');
 
 // Start the client-side router using only `pushState`
 // with the supplied routes
-Router.run(routes, Router.HistoryLocation, (Handler, req) => {
+Router.run(routes, Router.HistoryLocation, (Handler) => {
     // render the application from the root application component handler
     React.render(<Handler />, content);
 });
