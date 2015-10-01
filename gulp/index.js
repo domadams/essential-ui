@@ -4,7 +4,7 @@ import { join as joinPath } from 'path';
 import util from 'gulp-util';
 
 // The default task (called when you run `gulp` from cli)
-gulp.task('default', ['eslint']);
+gulp.task('default', ['eslint', 'browserify']);
 
 // load all tasks in tasks directory ...
 let dir = joinPath(__dirname, 'tasks');

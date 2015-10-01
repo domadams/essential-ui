@@ -12,11 +12,11 @@
     "site": "node index.js"
   },
   "engines": {
-    "node": ">=0.12.0"
+    "node": ">=4.1.0"
   },
   "dependencies": {
-    "babel": "^5.8.21",
-    "config": "^1.15.0",
+    "babel": "^5.8.23",
+    "config": "^1.16.0",
     "express": "^4.13.3",
     "jade": "^1.11.0",
     "react": "^0.13.3",

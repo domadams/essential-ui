@@ -41,4 +41,4 @@ npm-debug.log
 *.swp
 
 #ignoe public directory for site
-site/public
+site/public/*.js

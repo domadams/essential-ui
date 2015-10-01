@@ -35,7 +35,7 @@ var BUTTON_TYPES = ['primary', 'secondary'];
 
 var styles = {
     base: {
-        border: 1,
+        border: '1px solid',
         borderRadius: 50,
         cursor: 'pointer',
         lineHeight: 1,
@@ -113,7 +113,7 @@ var Button = (function (_Component) {
 
             return _react2['default'].createElement(
                 'button',
-                { style: style, title: text, type: 'submit' },
+                { style: style, title: text, type: "submit" },
                 text
             );
         }
