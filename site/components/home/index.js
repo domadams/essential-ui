@@ -5,7 +5,7 @@ class Home extends React.Component{
     render() {
         return (
             <div>
-                <h2>Hello World!</h2>
+                <h2>A UI Toolkit for React.js Websites</h2>
                 <div>
                     <Button size="lg" text="Hello!" type="primary" />
                 </div>

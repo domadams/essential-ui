@@ -113,7 +113,7 @@ var Button = (function (_Component) {
 
             return _react2['default'].createElement(
                 'button',
-                { style: style, title: text, type: "submit" },
+                { style: style, title: text, type: 'submit' },
                 text
             );
         }

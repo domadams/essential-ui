@@ -1,5 +1,6 @@
 var path = require('path');
 var webpack = require('webpack');
+var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
     context: path.join(__dirname, 'site'),
@@ -14,12 +15,27 @@ module.exports = {
             {
                 test: /\.js$/,
                 exclude: /node_modules/,
-                loaders: ['babel-loader']
+                loaders: ['jsx-loader', 'babel-loader']
+            }
+        ],
+        loaders: [
+            // SASS
+            {
+                test: /\.scss$/,
+                loader: ExtractTextPlugin.extract('css!sass')
             }
         ]
     },
     plugins: [
         new webpack.optimize.OccurrenceOrderPlugin(true),
-        new webpack.optimize.UglifyJsPlugin({minimize: true})
+        new webpack.optimize.UglifyJsPlugin({minimize: true}),
+        new webpack.DefinePlugin({
+            'process.env': {
+                BROWSER: JSON.stringify(true)
+            }
+        }),
+        new ExtractTextPlugin('style.css', {
+            allChunks: true
+        })
     ]
 };
