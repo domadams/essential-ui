@@ -10,7 +10,7 @@
     "url": "https://github.com/domadams/EssentialUI"
   },
   "scripts": {
-    "prepublish": "babel index.js ./lib -d ./dist",
+    "prepublish": "babel ./lib -d ./dist",
     "hooks": "chmod +x hooks/*; cd .git/hooks && ln -sf ../../hooks/* ."
   },
   "engines": {

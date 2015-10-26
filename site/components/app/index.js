@@ -5,6 +5,7 @@ if (process.env.BROWSER) {
 
 import React from 'react';
 import { RouteHandler } from 'react-router';
+import Header from '../shared/header';
 
 class App extends React.Component{
     static displayName = 'App';
@@ -12,9 +13,7 @@ class App extends React.Component{
     render() {
         return (
             <div className="appComponent">
-                <header>
-                    <h1>Essential UI</h1>
-                </header>
+                <Header />
                 <section>
                     {/* Render Main Content */}
                     <RouteHandler/>
