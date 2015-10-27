@@ -3,7 +3,7 @@ if (process.env.BROWSER) {
 }
 
 import React from 'react';
-import { Button } from '../../../dist';
+import { Link } from 'react-router';
 
 class Home extends React.Component{
     render() {
@@ -14,7 +14,7 @@ class Home extends React.Component{
                     <h3>A UI Toolkit for React.js Websites</h3>
                 </div>
                 <div>
-                    <Button size="lg" text="Hello!" type="primary" />
+                    <Link to={`/buttons`}>Buttons</Link>
                 </div>
             </div>
         );

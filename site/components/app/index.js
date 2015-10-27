@@ -3,12 +3,14 @@ if (process.env.BROWSER) {
     require('./_app.scss');
 }
 
-import React from 'react';
-import { RouteHandler } from 'react-router';
+import React, { Component, PropTypes } from 'react';
 import Header from '../shared/header';
 
-class App extends React.Component{
+class App extends Component{
     static displayName = 'App';
+    static propTypes = {
+        children: PropTypes.object
+    };
 
     render() {
         return (
@@ -16,7 +18,7 @@ class App extends React.Component{
                 <Header />
                 <section>
                     {/* Render Main Content */}
-                    <RouteHandler/>
+                    {this.props.children}
                 </section>
             </div>
         );

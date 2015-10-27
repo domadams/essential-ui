@@ -7,7 +7,9 @@
  * language translations
  ******************************************************/
 import React from 'react';
+import ReactDOM from 'react-dom';
 import Router from 'react-router';
+import createBrowserHistory from 'history/lib/createBrowserHistory';
 import routes from './routes';
 
 // main contents </div>
@@ -17,9 +19,11 @@ let content = document.getElementById('content');
 //import parseSafe from '../utils/parse-safe';
 //let data = parseSafe(document.getElementById('initial-data').innerHTML, {});
 
+//set up history api
+let history = createBrowserHistory();
+
 // Start the client-side router using only `pushState`
 // with the supplied routes
-Router.run(routes, Router.HistoryLocation, (Handler) => {
-    // render the application from the root application component handler
-    React.render(<Handler />, content);
-});
+ReactDOM.render((
+    <Router history={history} routes={routes} />
+), content);

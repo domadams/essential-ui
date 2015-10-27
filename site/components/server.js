@@ -8,7 +8,8 @@
 import { compileFile } from 'jade';
 import { join as joinPath } from 'path';
 import React from 'react';
-import Router from 'react-router';
+import { renderToString } from 'react-dom/server'
+import { match, RoutingContext } from 'react-router'
 // Routes defined in React-Router </Route> components
 import routes from './routes';
 
@@ -17,8 +18,6 @@ let layout = compileFile(layoutPath);
 
 export default () => {
     return (req, res) => {
-        let url = req.url;
-
         // construct data to be returned to client
         let data = {};
 
@@ -27,15 +26,23 @@ export default () => {
             data
         };
 
-        // Execute route matching with React-Router
-        Router.run(routes, url, Handler => {
-            // return with content to respond to client
-            templateLocals.content = React.renderToString(
-                <Handler />
-            );
+        // Note that req.url here should be the full URL path from
+        // the original request, including the query string.
+        match({routes, location: req.url }, (error, redirectLocation, renderProps) => {
+            if (error) {
+                res.status(500).send(error.message)
+            } else if (redirectLocation) {
+                res.redirect(302, redirectLocation.pathname + redirectLocation.search)
+            } else if (renderProps) {
+                // return with content to respond to client
+                templateLocals.content = renderToString(<RoutingContext {...renderProps} />);
+                // send response to client
+                res.status(200).send(layout(templateLocals));
+            } else {
+                res.status(404).send('Not found')
+            }
+        })
 
-            // send response to client
-            res.send(layout(templateLocals));
-        });
+
     };
 };
