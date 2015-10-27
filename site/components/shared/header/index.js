@@ -12,7 +12,6 @@ class Header extends React.Component{
         return (
             <header>
                 <Logo />
-                <h1>Essential UI</h1>
             </header>
         );
     }

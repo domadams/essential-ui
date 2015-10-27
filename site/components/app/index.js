@@ -12,7 +12,7 @@ class App extends React.Component{
 
     render() {
         return (
-            <div className="appComponent">
+            <div className="app-component">
                 <Header />
                 <section>
                     {/* Render Main Content */}
