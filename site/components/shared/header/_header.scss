@@ -1,10 +1,10 @@
 .header-component{
   .logo{
-    background: url("/images/logo/essential-ui-logo.png") no-repeat scroll 0 0 #fff;
+    background: url("/images/logo/essential-ui-logo.png") no-repeat scroll 5px 0 #fff;
     background-size: contain;
     color:#224A75;
     display: block;
-    height: 55px;
+    height: 60px;
     text-decoration: none;
 
     .logo-text{
@@ -12,8 +12,8 @@
       font-size: 2rem;
       font-weight: 600;
       letter-spacing: 1px;
-      padding-left: 55px;
-      padding-top: 13px;
+      padding-left: 60px;
+      padding-top: 16px;
     }
   }
 
@@ -24,8 +24,8 @@
     background: url("/images/logo/github-logo.svg") no-repeat scroll 0 0 #fff;
     background-size: contain;
     display: block;
-    height: 45px;
-    width:45px;
+    height: 50px;
+    width:50px;
   }
 
   .nav-links{
@@ -57,21 +57,18 @@
 
       .logo-text{
         font-size:1.4rem;
-        padding-left: 45px;
+        padding-left: 46px;
       }
+    }
+
+    .github{
+      margin-top: 0;
+      height: 40px;
+      width: 40px;
     }
   }
 
   @media only screen and (max-width: 480px) {
-    .logo{
-      height:45px;
-
-      .logo-text{
-        font-size:1.4rem;
-        padding-left: 45px;
-      }
-    }
-
     .github{
       display: none;
     }
