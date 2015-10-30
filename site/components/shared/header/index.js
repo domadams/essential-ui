@@ -19,7 +19,7 @@ class Header extends React.Component{
                     <Link to={`/buttons`}>Buttons</Link>
                 </div>
                 <div className="col span_1_of_8">
-                    <a href="https://github.com/domadams/essential-ui" className="github">
+                    <a className="github" href="https://github.com/domadams/essential-ui">
                         <span className="visually-hidden">Fork the code on GitHub</span>
                     </a>
                 </div>
