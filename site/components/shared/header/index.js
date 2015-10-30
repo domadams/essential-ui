@@ -21,9 +21,18 @@ class Header extends React.Component{
                     </a>
                 </div>
                 <div className="col span_8_of_8">
-                    <ul>
+                    <ul className="nav-links">
                         <li>
                             <Link to={`/buttons`}>Buttons</Link>
+                        </li>
+                        <li>
+                            <Link to={`/`}>Labels</Link>
+                        </li>
+                        <li>
+                            <Link to={`/`}>Inputs</Link>
+                        </li>
+                        <li>
+                            <Link to={`/`}>Forms</Link>
                         </li>
                     </ul>
                 </div>

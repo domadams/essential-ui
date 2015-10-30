@@ -28,6 +28,7 @@
 }
 
 .col:first-child { margin-left: 0; } /* all browsers except IE6 and lower */
+.col:last-child { margin-left: 0; }
 
 
 /*  REMOVE MARGINS AS ALL GO FULL WIDTH AT 480 PIXELS */

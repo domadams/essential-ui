@@ -28,6 +28,29 @@
     width:45px;
   }
 
+  .nav-links{
+    list-style-type: none;
+
+    li {
+
+      display:inline-block;
+      padding:0 15px;
+
+      a {
+        color: #888;
+        text-transform: uppercase;
+        font-size: 0.8rem;
+        text-decoration: none;
+        border-bottom: 3px solid #fff;
+        transition: all 200ms linear;
+
+        &:hover {
+          border-bottom: 3px solid #31B8F0;
+        }
+      }
+    }
+  }
+
   @media only screen and (max-width: 960px) {
     .logo{
       height:45px;
