@@ -1,16 +1,14 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Button } from '../../../dist';
-import { Link } from 'react-router';
 
-class Buttons extends React.Component{
+class Buttons extends Component{
+    static displayName = 'Buttons';
+
     render() {
         return (
             <div className="buttons-component">
                 <div>
                     <Button size="lg" text="Hello!" type="primary" />
-                </div>
-                <div>
-                    <Link to={`/`}>Home</Link>
                 </div>
             </div>
         );

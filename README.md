@@ -28,11 +28,23 @@ export default SimpleComponent;
 
 ## Getting Started for Developers
 
-**Prerequisites** Please ensure that you have Node.js v4.1.x installed [nodejs.org](http://nodejs.org/dist/v4.1.1/) once this is installed upgrade npm (`$ npm install -g npm`).
+**Prerequisites** Please ensure that you have Node.js v4.1.x installed [nodejs.org](http://nodejs.org/dist/v4.1.2/) once this is installed upgrade npm (`$ npm install -g npm`).
 Then install `gulp` globally (`$ npm install -g gulp`)
 
 
-To get started simply fork this repository, clone it, then simply install the dependencies:
+To get started fork this repository, clone it, then simply install the dependencies:
 ```
 $ npm install
 ```
+
+Should you want to run the site locally move into the site directory and install the dependencies:
+```
+$ npm install
+```
+
+Then you can run:
+```
+$ gulp && node .
+```
+
+

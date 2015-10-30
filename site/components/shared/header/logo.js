@@ -1,14 +1,14 @@
 import React from 'react';
+import { Link } from 'react-router';
 
 class Logo extends React.Component{
     static displayName = 'Logo';
     render() {
         return (
-            <a href="http://www.essential-ui.com">
-                <div className="logo">
-                    <span className="visually-hidden">Essential UI Logo</span>
-                </div>
-            </a>
+            <Link to={`/`} className="logo">
+                <span className="visually-hidden">Essential UI Logo</span>
+                <span className="logo-text">ssential UI</span>
+            </Link>
         );
     }
 }

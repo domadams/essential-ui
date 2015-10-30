@@ -1,6 +1,56 @@
-.logo{
-  height: 55px;
-  width: 100%;
-  background: url("/images/logo/essential-ui-logo.png") no-repeat scroll 0 0 #fff;
-  background-size: contain;
+.header-component{
+  .logo{
+    background: url("/images/logo/essential-ui-logo.png") no-repeat scroll 0 0 #fff;
+    background-size: contain;
+    color:#224A75;
+    display: block;
+    height: 55px;
+    text-decoration: none;
+
+    .logo-text{
+      display: block;
+      font-size: 2rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+      padding-left: 55px;
+      padding-top: 13px;
+    }
+  }
+
+  .github{
+    float: right;
+    padding-right: 10px;
+    margin-top: 5px;
+    background: url("/images/logo/github-logo.svg") no-repeat scroll 0 0 #fff;
+    background-size: contain;
+    display: block;
+    height: 45px;
+    width:45px;
+  }
+
+  @media only screen and (max-width: 960px) {
+    .logo{
+      height:45px;
+
+      .logo-text{
+        font-size:1.4rem;
+        padding-left: 45px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 480px) {
+    .logo{
+      height:45px;
+
+      .logo-text{
+        font-size:1.4rem;
+        padding-left: 45px;
+      }
+    }
+
+    .github{
+      display: none;
+    }
+  }
 }

@@ -1,10 +1,12 @@
 if (process.env.BROWSER) {
     require('../../assets/styles/_normalize.scss');
+    require('../../assets/styles/_grid.scss');
     require('./_app.scss');
 }
 
 import React, { Component, PropTypes } from 'react';
 import Header from '../shared/header';
+import Footer from '../shared/footer';
 
 class App extends Component{
     static displayName = 'App';
@@ -15,11 +17,16 @@ class App extends Component{
     render() {
         return (
             <div className="app-component">
-                <Header />
-                <section>
+                <div className="section group">
+                    <Header />
+                </div>
+                <div className="section group">
                     {/* Render Main Content */}
                     {this.props.children}
-                </section>
+                </div>
+                <div className="section group">
+                    <Footer />
+                </div>
             </div>
         );
     }
