@@ -12,16 +12,20 @@ class Header extends React.Component{
     render() {
         return (
             <header className="header-component">
-                <div className="col span_2_of_8">
+                <div className="col span_4_of_8">
                     <Logo />
                 </div>
-                <div className="col span_5_of_8">
-                    <Link to={`/buttons`}>Buttons</Link>
-                </div>
-                <div className="col span_1_of_8">
+                <div className="col span_4_of_8">
                     <a className="github" href="https://github.com/domadams/essential-ui">
                         <span className="visually-hidden">Fork the code on GitHub</span>
                     </a>
+                </div>
+                <div className="col span_8_of_8">
+                    <ul>
+                        <li>
+                            <Link to={`/buttons`}>Buttons</Link>
+                        </li>
+                    </ul>
                 </div>
             </header>
         );

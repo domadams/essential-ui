@@ -11,8 +11,11 @@ class Home extends Component{
         return (
             <div className="home-component">
                 <div className="intro col span_8_of_8">
-                    <h2>Essential UI</h2>
-                    <h3>A UI Toolkit for React.js Websites</h3>
+                    <h2 className="main-title">Essential UI</h2>
+                    <h3 className="sub-title">A UI Toolkit for React.js Websites</h3>
+                    <a className="view-github" href="https://github.com/domadams/essential-ui">
+                        View the project on GitHub
+                    </a>
                 </div>
             </div>
         );

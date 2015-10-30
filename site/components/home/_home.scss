@@ -7,6 +7,64 @@
     background-color: #224A75;
     color: #fff;
     padding: 50px 0 100px;
-    text-align:center;
+  }
+
+  .main-title{
+    font-size: 4rem;
+    padding-left: 50px;
+  }
+
+  .sub-title{
+    font-weight: 300;
+    font-size: 2rem;
+    opacity: 0.7;
+    padding: 30px 0 30px 50px;
+  }
+
+  .view-github{
+    background-color:#fff;
+    border-radius:3px;
+    color: #224A75;
+    font-weight: 600;
+    margin-left:50px;
+    padding:10px;
+    text-decoration:none;
+    transition: color 200ms linear;
+
+    &:hover{
+      color: #31B8F0;
+    }
+  }
+
+  @media only screen and (max-width: 640px) {
+    .main-title{
+      font-size: 2.5rem;
+      padding-left: 30px;
+    }
+
+    .sub-title{
+      font-size: 1.7rem;
+      padding: 20px 0 30px 30px;
+    }
+
+    .view-github{
+      margin-left:30px;
+    }
+  }
+
+  @media only screen and (max-width: 480px) {
+    .main-title{
+      font-size: 2rem;
+      padding-left: 20px;
+    }
+
+    .sub-title{
+      font-size: 1.3rem;
+      padding: 20px 0 30px 20px;
+    }
+
+    .view-github{
+      margin-left:20px;
+    }
   }
 }
