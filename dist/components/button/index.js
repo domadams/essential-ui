@@ -16,6 +16,8 @@ var _createClass = require('babel-runtime/helpers/create-class')['default'];
 
 var _classCallCheck = require('babel-runtime/helpers/class-call-check')['default'];
 
+var _Object$assign = require('babel-runtime/core-js/object/assign')['default'];
+
 var _interopRequireDefault = require('babel-runtime/helpers/interop-require-default')['default'];
 
 Object.defineProperty(exports, '__esModule', {
@@ -25,10 +27,6 @@ Object.defineProperty(exports, '__esModule', {
 var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
-
-var _lodash = require('lodash');
-
-var _lodash2 = _interopRequireDefault(_lodash);
 
 var BUTTON_SIZES = ['lg', 'md', 'sm'];
 var BUTTON_TYPES = ['primary', 'secondary'];
@@ -109,7 +107,7 @@ var Button = (function (_Component) {
             var size = this.props.size;
             var text = this.props.text;
 
-            var style = _lodash2['default'].extend({}, styles.base, styles[type], styles[size]);
+            var style = _Object$assign({}, styles.base, styles[type], styles[size]);
 
             return _react2['default'].createElement(
                 'button',

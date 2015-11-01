@@ -7,7 +7,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/domadams/EssentialUI"
+    "url": "git+https://github.com/domadams/essential-ui.git"
   },
   "scripts": {
     "prepublish": "babel ./lib -d ./dist",
@@ -49,5 +49,9 @@
     "ui",
     "framework",
     "element"
-  ]
+  ],
+  "bugs": {
+    "url": "https://github.com/domadams/essential-ui/issues"
+  },
+  "homepage": "https://github.com/domadams/essential-ui#readme"
 }
