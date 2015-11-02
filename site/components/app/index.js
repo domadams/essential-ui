@@ -1,6 +1,7 @@
 if (process.env.BROWSER) {
     require('../../assets/styles/_normalize.scss');
     require('../../assets/styles/_grid.scss');
+    require('../../assets/styles/_shared.scss');
     require('./_app.scss');
 }
 

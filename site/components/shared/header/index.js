@@ -26,13 +26,7 @@ class Header extends React.Component{
                             <Link to={`/buttons`}>Buttons</Link>
                         </li>
                         <li>
-                            <Link to={`/`}>Labels</Link>
-                        </li>
-                        <li>
-                            <Link to={`/`}>Inputs</Link>
-                        </li>
-                        <li>
-                            <Link to={`/`}>Forms</Link>
+                            <Link to={`/labels`}>Labels</Link>
                         </li>
                     </ul>
                 </div>
