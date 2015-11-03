@@ -7,7 +7,7 @@ A UI Toolkit for React.js Websites and Apps
 
 Currently under development; built by [@domadams](http://dominic-adams.com/)
 
-See [essential-ui.com](http://essential-ui.com) for examples and documentation.
+See [essential-ui.com](http://www.essential-ui.com) for examples and documentation.
 
 ## Installation
 
