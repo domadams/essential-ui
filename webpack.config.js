@@ -2,7 +2,15 @@ var path = require('path');
 var webpack = require('webpack');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
-module.exports = {
+var commonLoaders = [
+    {
+        test: /\.js$|\.jsx$/,
+        loaders: ['jsx-loader', 'babel-loader'],
+        exclude: /(node_modules|site\/node_modules)/
+    }
+];
+
+var clientConfig = {
     context: path.join(__dirname, 'site'),
     entry: './components/client.js',
 
@@ -11,20 +19,13 @@ module.exports = {
         path: path.join(__dirname, 'site/public')
     },
     module: {
-        preLoaders: [
-            {
-                test: /\.js$/,
-                exclude: /node_modules/,
-                loaders: ['jsx-loader', 'babel-loader']
-            }
-        ],
-        loaders: [
+        loaders:  commonLoaders.concat([
             // SASS
             {
                 test: /\.scss$/,
                 loader: ExtractTextPlugin.extract('css-loader!sass-loader')
             }
-        ]
+        ])
     },
     plugins: [
         new webpack.optimize.OccurrenceOrderPlugin(true),
@@ -39,3 +40,5 @@ module.exports = {
         })
     ]
 };
+
+export default [clientConfig];
