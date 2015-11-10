@@ -30,6 +30,11 @@ var _react2 = _interopRequireDefault(_react);
 
 var BUTTON_SIZES = ['lg', 'md', 'sm'];
 var BUTTON_TYPES = ['primary', 'secondary'];
+var colors = {
+    white: '#FFF',
+    blue: '#00539f',
+    brightBlue: '#009cda'
+};
 
 var styles = {
     base: {
@@ -43,15 +48,22 @@ var styles = {
     },
 
     primary: {
-        background: '#00539F',
+        background: colors.blue,
         borderColor: 'transparent',
-        color: '#FFF'
+        color: colors.white,
+        hovered: {
+            background: colors.brightBlue
+        }
     },
 
     secondary: {
-        background: '#FFF',
-        borderColor: '#00539F',
-        color: '#00539F'
+        background: colors.white,
+        borderColor: colors.blue,
+        color: colors.blue,
+        hovered: {
+            borderColor: colors.brightBlue,
+            color: colors.brightBlue
+        }
     },
 
     lg: {
@@ -98,9 +110,18 @@ var Button = (function (_Component) {
         _classCallCheck(this, Button);
 
         _get(Object.getPrototypeOf(Button.prototype), 'constructor', this).call(this, props);
+        this.toggleHover = this.toggleHover.bind(this);
+        this.state = {
+            hovered: false
+        };
     }
 
     _createClass(Button, [{
+        key: 'toggleHover',
+        value: function toggleHover() {
+            this.setState({ hovered: !this.state.hovered });
+        }
+    }, {
         key: 'render',
         value: function render() {
             var type = this.props.type;
@@ -109,9 +130,13 @@ var Button = (function (_Component) {
 
             var style = _Object$assign({}, styles.base, styles[type], styles[size]);
 
+            if (this.state.hovered) {
+                style = _Object$assign({}, styles.base, styles[type], styles[size], styles[type].hovered);
+            }
+
             return _react2['default'].createElement(
                 'button',
-                { style: style, title: text, type: 'submit' },
+                { onMouseEnter: this.toggleHover, onMouseLeave: this.toggleHover, style: style, title: text, type: 'submit' },
                 text
             );
         }
