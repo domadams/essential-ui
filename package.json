@@ -2,7 +2,7 @@
   "name": "essential-ui",
   "description": "A collection of React components",
   "main": "dist/index.js",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": "Dominic Adams",
   "license": "MIT",
   "repository": {
