@@ -14,6 +14,8 @@ var _classCallCheck = require('babel-runtime/helpers/class-call-check')['default
 
 var _extends = require('babel-runtime/helpers/extends')['default'];
 
+var _Object$assign = require('babel-runtime/core-js/object/assign')['default'];
+
 var _interopRequireDefault = require('babel-runtime/helpers/interop-require-default')['default'];
 
 Object.defineProperty(exports, '__esModule', {
@@ -62,12 +64,14 @@ var Row = (function (_Component) {
     _createClass(Row, [{
         key: 'render',
         value: function render() {
+            var rowAfter = _Object$assign({}, styles.rowBefore, styles.rowAfter);
+
             return _react2['default'].createElement(
                 'div',
                 null,
                 _react2['default'].createElement('div', { style: styles.rowBefore }),
                 _react2['default'].createElement('div', _extends({}, this.props, { style: styles.row })),
-                _react2['default'].createElement('div', { style: styles.rowAfter })
+                _react2['default'].createElement('div', { style: rowAfter })
             );
         }
     }]);
