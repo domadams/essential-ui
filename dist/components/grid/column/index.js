@@ -76,7 +76,7 @@ var Column = (function (_Component) {
         key: 'propTypes',
         value: {
             children: _react.PropTypes.node.isRequired,
-            span: _react.PropTypes.string
+            span: _react.PropTypes.oneOf(COLUMN_SIZES)
         },
         enumerable: true
     }, {
