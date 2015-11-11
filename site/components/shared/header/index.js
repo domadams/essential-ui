@@ -5,6 +5,7 @@ if (process.env.BROWSER) {
 import React from 'react';
 import Logo from './logo';
 import { Link } from 'react-router';
+import { Col } from '../../../../dist';
 
 class Header extends React.Component{
     static displayName = 'Header';
@@ -12,15 +13,15 @@ class Header extends React.Component{
     render() {
         return (
             <header className="header-component">
-                <div className="col span_4_of_8">
+                <Col span="4of8">
                     <Logo />
-                </div>
-                <div className="col span_4_of_8">
+                </Col>
+                <Col span="4of8">
                     <a className="github" href="https://github.com/domadams/essential-ui">
                         <span className="visually-hidden">Fork the code on GitHub</span>
                     </a>
-                </div>
-                <div className="col span_8_of_8">
+                </Col>
+                <Col span="8of8">
                     <ul className="nav-links">
                         <li>
                             <Link to={`/buttons`}>Buttons</Link>
@@ -28,8 +29,11 @@ class Header extends React.Component{
                         <li>
                             <Link to={`/labels`}>Labels</Link>
                         </li>
+                        <li>
+                            <Link to={`/grid`}>Grid</Link>
+                        </li>
                     </ul>
-                </div>
+                </Col>
             </header>
         );
     }
