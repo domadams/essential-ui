@@ -14,8 +14,6 @@ var _classCallCheck = require('babel-runtime/helpers/class-call-check')['default
 
 var _extends = require('babel-runtime/helpers/extends')['default'];
 
-var _Object$assign = require('babel-runtime/core-js/object/assign')['default'];
-
 var _interopRequireDefault = require('babel-runtime/helpers/interop-require-default')['default'];
 
 Object.defineProperty(exports, '__esModule', {
@@ -27,17 +25,15 @@ var _react = require('react');
 var _react2 = _interopRequireDefault(_react);
 
 var styles = {
-    section: {
-        clear: 'both',
-        padding: 0,
-        margin: 0
+    row: {
+        margin: '0 -1.5em'
     },
 
-    group: {
+    rowBefore: {
         display: 'table'
     },
 
-    groupAfter: {
+    rowAfter: {
         clear: 'both'
     }
 };
@@ -66,15 +62,12 @@ var Row = (function (_Component) {
     _createClass(Row, [{
         key: 'render',
         value: function render() {
-
-            var styleAfter = _Object$assign({}, styles.group, styles.groupAfter);
-
             return _react2['default'].createElement(
                 'div',
                 null,
-                _react2['default'].createElement('div', { style: styles.group }),
-                _react2['default'].createElement('div', _extends({}, this.props, { style: styles.section })),
-                _react2['default'].createElement('div', { style: styleAfter })
+                _react2['default'].createElement('div', { style: styles.rowBefore }),
+                _react2['default'].createElement('div', _extends({}, this.props, { style: styles.row })),
+                _react2['default'].createElement('div', { style: styles.rowAfter })
             );
         }
     }]);

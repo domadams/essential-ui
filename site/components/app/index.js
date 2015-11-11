@@ -5,7 +5,7 @@ if (process.env.BROWSER) {
 }
 
 import React, { Component, PropTypes } from 'react';
-import { Row } from '../../../dist';
+import { Row, Col } from '../../../dist';
 import Header from '../shared/header';
 import Footer from '../shared/footer';
 
@@ -22,11 +22,15 @@ class App extends Component{
                     <Header />
                 </Row>
                 <Row>
-                    {/* Render Main Content */}
-                    {this.props.children}
+                    <Col span="8of8">
+                        {/* Render Main Content */}
+                        {this.props.children}
+                    </Col>
                 </Row>
                 <Row>
-                    <Footer />
+                    <Col span="8of8">
+                        <Footer />
+                    </Col>
                 </Row>
             </div>
         );

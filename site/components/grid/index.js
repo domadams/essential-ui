@@ -18,9 +18,11 @@ class Grid extends Component{
                 <h2 className="page-sub-header">Row</h2>
                 <div className="example">
                     <Row>
-                        <p className="highlight">
-                            I am a row
-                        </p>
+                        <Col span="8of8">
+                            <p className="highlight">
+                                I am a row
+                            </p>
+                        </Col>
                     </Row>
                 </div>
                 <h2 className="page-sub-header">8 Columns</h2>
@@ -106,6 +108,48 @@ class Grid extends Component{
                         <Col span="2of8">
                             <p className="highlight">
                                 Column 8
+                            </p>
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col span="3of8">
+                            <p className="highlight">
+                                Span 3 of 8
+                            </p>
+                        </Col>
+                        <Col span="5of8">
+                            <p className="highlight">
+                                Span 5 of 8
+                            </p>
+                        </Col>
+                        <Col span="4of8">
+                            <p className="highlight">
+                               Span 4 of 8
+                            </p>
+                        </Col>
+                        <Col span="4of8">
+                            <p className="highlight">
+                               Span 4 of 8
+                            </p>
+                        </Col>
+                        <Col span="1of8">
+                            <p className="highlight">
+                               Span 1 of 8
+                            </p>
+                        </Col>
+                        <Col span="7of8">
+                            <p className="highlight">
+                                Span 7 of 8
+                            </p>
+                        </Col>
+                        <Col span="2of8">
+                            <p className="highlight">
+                               Span 2 of 8
+                            </p>
+                        </Col>
+                        <Col span="6of8">
+                            <p className="highlight">
+                                Span 6 of 8
                             </p>
                         </Col>
                     </Row>

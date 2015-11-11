@@ -31,35 +31,36 @@ var COLUMN_SIZES = ['8of8', '7of8', '6of8', '5of8', '4of8', '3of8', '2of8', '1of
 
 var styles = {
     col: {
-        display: 'block',
+        width: '100%',
         float: 'left',
-        margin: '1% 0 1% 0'
+        boxSizing: 'border-box',
+        padding: '0  1.5em'
     },
 
     span: {
-        "8of8": {
+        '8of8': {
             width: '100%'
         },
-        "7of8": {
-            width: '87.3%'
+        '7of8': {
+            width: '87.5%'
         },
-        "6of8": {
-            width: '74.6%'
+        '6of8': {
+            width: '75%'
         },
-        "5of8": {
-            width: '61.9%'
+        '5of8': {
+            width: '62.5%'
         },
-        "4of8": {
-            width: '49.2%'
+        '4of8': {
+            width: '50%'
         },
-        "3of8": {
-            width: '36.5%'
+        '3of8': {
+            width: '37.5%'
         },
-        "2of8": {
-            width: '23.8%'
+        '2of8': {
+            width: '25%'
         },
-        "1of8": {
-            width: '11.1%'
+        '1of8': {
+            width: '12.5%'
         }
     }
 };
