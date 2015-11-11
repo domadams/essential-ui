@@ -31,7 +31,7 @@ module.exports = {
         new webpack.optimize.UglifyJsPlugin({minimize: true}),
         new webpack.DefinePlugin({
             'process.env': {
-                BROWSER: JSON.stringify(true)
+                BROWSER: JSON.stringify(false)
             }
         }),
         new ExtractTextPlugin('style.css', {
