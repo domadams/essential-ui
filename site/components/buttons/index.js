@@ -26,6 +26,88 @@ class Buttons extends Component{
                     <div className="example-component">
                         <Button size="sm" text="Small Button" type="primary" />
                     </div>
+                    <div className="example-code">
+                        <code>
+                            <span className="code-element">
+                                &lt;Button
+                            </span>
+                            <span className="code-attribute">
+                                size=
+                            </span>
+                            <span className="code-value">
+                                "lg"
+                            </span>
+                            <span className="code-attribute">
+                                text=
+                            </span>
+                            <span className="code-value">
+                                "Large Button"
+                            </span>
+                            <span className="code-attribute">
+                                type=
+                            </span>
+                            <span className="code-value">
+                                "primary"
+                            </span>
+                            <span className="code-element">
+                                /&gt;
+                            </span>
+                        </code>
+                        <br/>
+                        <code>
+                            <span className="code-element">
+                                &lt;Button
+                            </span>
+                            <span className="code-attribute">
+                                size=
+                            </span>
+                            <span className="code-value">
+                                "md"
+                            </span>
+                            <span className="code-attribute">
+                                text=
+                            </span>
+                            <span className="code-value">
+                                "Medium Button"
+                            </span>
+                            <span className="code-attribute">
+                                type=
+                            </span>
+                            <span className="code-value">
+                                "primary"
+                            </span>
+                            <span className="code-element">
+                                /&gt;
+                            </span>
+                        </code>
+                        <br/>
+                        <code>
+                            <span className="code-element">
+                                &lt;Button
+                            </span>
+                            <span className="code-attribute">
+                                size=
+                            </span>
+                            <span className="code-value">
+                                "sm"
+                            </span>
+                            <span className="code-attribute">
+                                text=
+                            </span>
+                            <span className="code-value">
+                                "Small Button"
+                            </span>
+                            <span className="code-attribute">
+                                type=
+                            </span>
+                            <span className="code-value">
+                                "primary"
+                            </span>
+                            <span className="code-element">
+                                /&gt;
+                            </span>
+                        </code>
+                    </div>
                 </div>
                 <h2 className="page-sub-header">Variants</h2>
                 <div className="example">
@@ -34,6 +116,61 @@ class Buttons extends Component{
                     </div>
                     <div className="example-component">
                         <Button size="md" text="Button" type="secondary" />
+                    </div>
+                    <div className="example-code">
+                        <code>
+                            <span className="code-element">
+                                &lt;Button
+                            </span>
+                            <span className="code-attribute">
+                                size=
+                            </span>
+                            <span className="code-value">
+                                "md"
+                            </span>
+                            <span className="code-attribute">
+                                text=
+                            </span>
+                            <span className="code-value">
+                                "Button"
+                            </span>
+                            <span className="code-attribute">
+                                type=
+                            </span>
+                            <span className="code-value">
+                                "primary"
+                            </span>
+                            <span className="code-element">
+                                /&gt;
+                            </span>
+                        </code>
+                        <br/>
+                        <code>
+                            <span className="code-element">
+                                &lt;Button
+                            </span>
+                            <span className="code-attribute">
+                                size=
+                            </span>
+                            <span className="code-value">
+                                "md"
+                            </span>
+                            <span className="code-attribute">
+                                text=
+                            </span>
+                            <span className="code-value">
+                                "Button"
+                            </span>
+                            <span className="code-attribute">
+                                type=
+                            </span>
+                            <span className="code-value">
+                                "secondary"
+                            </span>
+                            <span className="code-element">
+                                /&gt;
+                            </span>
+                        </code>
                     </div>
                 </div>
             </div>

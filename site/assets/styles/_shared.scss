@@ -24,4 +24,30 @@
   .example-component{
     padding:5px;
   }
+
+  .example-code{
+    background: #fff;
+    padding: 10px;
+    border-radius: 3px;
+    margin-top: 20px;
+
+    .indent{
+      margin-left:12px;
+    }
+
+    .code-element{
+      color:#9370db;
+      padding-right: 4px;
+    }
+
+    .code-attribute{
+      color: #8b0000;
+    }
+
+    .code-value{
+      color:#1e90ff;
+      padding-right:4px;
+    }
+  }
 }
+

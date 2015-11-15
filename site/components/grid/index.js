@@ -24,6 +24,30 @@ class Grid extends Component{
                             </p>
                         </Col>
                     </Row>
+                    <div className="example-code">
+                        <code>
+                            <span className="code-element">
+                                &lt;Row&gt;
+                            </span>
+                            <div className="indent">
+                                <span className="code-element">
+                                    &lt;Col
+                                </span>
+                                <span className="code-attribute">
+                                    span=
+                                </span>
+                                <span className="code-value">
+                                    "8of8"
+                                </span>
+                                <span className="code-element">
+                                    /&gt;
+                                </span>
+                            </div>
+                            <span className="code-element">
+                                &lt;/Row&gt;
+                            </span>
+                        </code>
+                    </div>
                 </div>
                 <h2 className="page-sub-header">8 Columns</h2>
                 <div className="example">
