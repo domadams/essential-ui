@@ -26,6 +26,7 @@ class Buttons extends Component{
                     <div className="example-component">
                         <Button size="sm" text="Small Button" type="primary" />
                     </div>
+                    <h3 className="example-usage">Example Usage:</h3>
                     <div className="example-code">
                         <code>
                             <span className="code-element">
@@ -117,6 +118,7 @@ class Buttons extends Component{
                     <div className="example-component">
                         <Button size="md" text="Button" type="secondary" />
                     </div>
+                    <h3 className="example-usage">Example Usage:</h3>
                     <div className="example-code">
                         <code>
                             <span className="code-element">

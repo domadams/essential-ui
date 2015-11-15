@@ -19,6 +19,7 @@ class Labels extends Component{
                     <div className="example-component">
                        <Label labelFor="input" labelText="Here is a label"/>
                     </div>
+                    <h3 className="example-usage">Example Usage:</h3>
                     <div className="example-code">
                         <code>
                             <span className="code-element">

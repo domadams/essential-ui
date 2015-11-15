@@ -24,6 +24,7 @@ class Grid extends Component{
                             </p>
                         </Col>
                     </Row>
+                    <h3 className="example-usage">Example Usage:</h3>
                     <div className="example-code">
                         <code>
                             <span className="code-element">
@@ -54,32 +55,32 @@ class Grid extends Component{
                     <Row>
                         <Col span="1of8">
                             <p className="highlight">
-                                Column 1
+                                Span 1 of 8
                             </p>
                         </Col>
                         <Col span="1of8">
                             <p className="highlight">
-                                Column 2
+                                Span 1 of 8
                             </p>
                         </Col>
                         <Col span="1of8">
                             <p className="highlight">
-                                Column 3
+                                Span 1 of 8
                             </p>
                         </Col>
                         <Col span="1of8">
                             <p className="highlight">
-                                Column 4
+                                Span 1 of 8
                             </p>
                         </Col>
                         <Col span="1of8">
                             <p className="highlight">
-                                Column 5
+                                Span 1 of 8
                             </p>
                         </Col>
                         <Col span="1of8">
                             <p className="highlight">
-                                Column 6
+                                Span 1 of 8
                             </p>
                         </Col>
                         <Col span="1of8">
@@ -89,49 +90,49 @@ class Grid extends Component{
                         </Col>
                         <Col span="1of8">
                             <p className="highlight">
-                                Column 8
+                                Span 1 of 8
                             </p>
                         </Col>
                     </Row>
                     <Row>
                         <Col span="2of8">
                             <p className="highlight">
-                                Column 1
+                                Span 2 of 8
                             </p>
                         </Col>
                         <Col span="2of8">
                             <p className="highlight">
-                                Column 2
+                                Span 2 of 8
                             </p>
                         </Col>
                         <Col span="2of8">
                             <p className="highlight">
-                                Column 3
+                                Span 2 of 8
                             </p>
                         </Col>
                         <Col span="2of8">
                             <p className="highlight">
-                                Column 4
+                                Span 2 of 8
                             </p>
                         </Col>
                         <Col span="2of8">
                             <p className="highlight">
-                                Column 5
+                                Span 2 of 8
                             </p>
                         </Col>
                         <Col span="2of8">
                             <p className="highlight">
-                                Column 6
+                                Span 2 of 8
                             </p>
                         </Col>
                         <Col span="2of8">
                             <p className="highlight">
-                                Column 7
+                                Span 2 of 8
                             </p>
                         </Col>
                         <Col span="2of8">
                             <p className="highlight">
-                                Column 8
+                                Span 2 of 8
                             </p>
                         </Col>
                     </Row>
