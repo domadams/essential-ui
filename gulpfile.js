@@ -4,5 +4,5 @@
  * the gulp tasks by calling index.js in gulp directory
  ******************************************************/
 
-require('babel/register');
+require('babel-core/register');
 require('./gulp');

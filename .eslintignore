@@ -1,0 +1,4 @@
+node_modules/**/*
+site/node_modules/**/*.js
+site/public/**/*.js
+dist/**/*.js

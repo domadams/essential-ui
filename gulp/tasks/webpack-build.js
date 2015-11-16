@@ -1,13 +1,16 @@
-var webpack = require('webpack');
 var webpackConfig = require('../../webpack.config');
-var webpackStream = require('webpack-stream');
+var webpack = require('webpack');
 
-export default function (gulp) {
+module.exports = function(gulp, plugins) {
+    return function () {
+        // run webpack
+        webpack(webpackConfig, function (err, stats) {
+            if (err) throw new plugins.util.PluginError('webpack:build', err);
+            plugins.util.log('[webpack:build]', stats.toString({
+                colors: true
+            }));
+        });
+    }
+};
 
-    // this tells gulp to take the index.js file and send it to Webpack along with the config and put the resulting files in dist/
-    gulp.task('webpack-build', function() {
-        return gulp.src('site/components/client.js')
-            .pipe(webpackStream(webpackConfig, webpack) )
-            .pipe(gulp.dest('site/public'))
-    });
-}
+

@@ -1,19 +1,11 @@
-import fs from 'fs';
-import gulp from 'gulp';
-import { join as joinPath } from 'path';
-import util from 'gulp-util';
+var gulp = require('gulp');
+var plugins = require('gulp-load-plugins')();
 
-// The default task (called when you run `gulp` from cli)
-gulp.task('default', ['webpack-build']);
+function getTask(task) {
+    return require('./tasks/' + task)(gulp, plugins);
+}
 
-// load all tasks in tasks directory ...
-let dir = joinPath(__dirname, 'tasks');
-fs.readdirSync(dir).forEach(file => {
-    let task = require(joinPath(dir, file));
+gulp.task('webpack:build', getTask('webpack-build'));
 
-    try {
-        task(gulp);
-    } catch (err) {
-        util.log(`task ${file} must export a default function`);
-    }
-});
+gulp.task('default', ['webpack:build']);
+

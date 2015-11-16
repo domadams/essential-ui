@@ -15,10 +15,10 @@
     "node": ">=4.1.0"
   },
   "dependencies": {
-    "babel": "^5.8.29",
+    "babel-core": "^6.1.21",
     "config": "^1.16.0",
     "express": "^4.13.3",
-    "history": "^1.13.0",
+    "history": "^1.13.1",
     "jade": "^1.11.0",
     "react": "^0.14.2",
     "react-dom": "^0.14.2",

@@ -30,6 +30,7 @@ node_modules
 .lock-wscript
 .idea
 *.iml
+.eslintcache
 
 # npm will output this on error
 npm-debug.log
