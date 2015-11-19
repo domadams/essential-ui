@@ -20,13 +20,13 @@ class Buttons extends Component{
                     <h2 className="page-sub-header">Sizes</h2>
                     <div className="example">
                         <div className="example-component">
-                            <Button size="lg" text="Large Button" type="primary" />
+                            <Button buttonType="primary" size="lg" text="Large Button" />
                         </div>
                         <div className="example-component">
-                            <Button size="md" text="Medium Button" type="primary" />
+                            <Button buttonType="primary" size="md" text="Medium Button" />
                         </div>
                         <div className="example-component">
-                            <Button size="sm" text="Small Button" type="primary" />
+                            <Button buttonType="primary" size="sm" text="Small Button" />
                         </div>
                         <h3 className="example-usage">Example Usage:</h3>
                         <div className="example-code">
@@ -47,7 +47,7 @@ class Buttons extends Component{
                                     "Large Button"
                                 </span>
                                 <span className="code-attribute">
-                                    type=
+                                    buttonType=
                                 </span>
                                 <span className="code-value">
                                     "primary"
@@ -74,7 +74,7 @@ class Buttons extends Component{
                                     "Medium Button"
                                 </span>
                                 <span className="code-attribute">
-                                    type=
+                                    buttonType=
                                 </span>
                                 <span className="code-value">
                                     "primary"
@@ -101,7 +101,7 @@ class Buttons extends Component{
                                     "Small Button"
                                 </span>
                                 <span className="code-attribute">
-                                    type=
+                                    buttonType=
                                 </span>
                                 <span className="code-value">
                                     "primary"
@@ -115,10 +115,10 @@ class Buttons extends Component{
                     <h2 className="page-sub-header">Variants</h2>
                     <div className="example">
                         <div className="example-component">
-                            <Button size="md" text="Button" type="primary" />
+                            <Button buttonType="primary" size="md" text="Button" />
                         </div>
                         <div className="example-component">
-                            <Button size="md" text="Button" type="secondary" />
+                            <Button buttonType="secondary" size="md" text="Button" />
                         </div>
                         <h3 className="example-usage">Example Usage:</h3>
                         <div className="example-code">
@@ -139,7 +139,7 @@ class Buttons extends Component{
                                     "Button"
                                 </span>
                                 <span className="code-attribute">
-                                    type=
+                                    buttonType=
                                 </span>
                                 <span className="code-value">
                                     "primary"
@@ -166,10 +166,51 @@ class Buttons extends Component{
                                     "Button"
                                 </span>
                                 <span className="code-attribute">
-                                    type=
+                                    buttonType=
                                 </span>
                                 <span className="code-value">
                                     "secondary"
+                                </span>
+                                <span className="code-element">
+                                    /&gt;
+                                </span>
+                            </code>
+                        </div>
+                    </div>
+                    <h2 className="page-sub-header">Link Button</h2>
+                    <div className="example">
+                        <div className="example-component">
+                            <Button buttonType="primary" href="http://www.essential-ui.com/" size="md" text="Large Button" />
+                        </div>
+                        <h3 className="example-usage">Example Usage:</h3>
+                        <div className="example-code">
+                            <code>
+                                <span className="code-element">
+                                    &lt;Button
+                                </span>
+                                <span className="code-attribute">
+                                    size=
+                                </span>
+                                <span className="code-value">
+                                    "md"
+                                </span>
+                                <span className="code-attribute">
+                                    text=
+                                </span>
+                                <span className="code-value">
+                                    "Button"
+                                </span>
+                                <span className="code-attribute">
+                                    buttonType=
+                                </span>
+                                <span className="code-value">
+                                    "primary"
+                                </span>
+                                <span className="code-attribute">
+                                    href=
+                                </span>
+                                <span className="code-value">
+                                    "http://www.essential-ui.com/"
                                 </span>
                                 <span className="code-element">
                                     /&gt;
