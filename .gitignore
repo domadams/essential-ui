@@ -42,3 +42,6 @@ npm-debug.log
 
 #ignoe public directory for site
 site/public/*.js
+site/public/sitemap.xml
+site/public/google630e2940c57a65b4.html
+
