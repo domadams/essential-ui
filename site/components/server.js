@@ -10,6 +10,7 @@ import { join as joinPath } from 'path';
 import React from 'react';
 import { renderToString } from 'react-dom/server'
 import { match, RoutingContext } from 'react-router'
+import DocumentTitle from 'react-document-title';
 // Routes defined in React-Router </Route> components
 import routes from './routes';
 
@@ -36,9 +37,13 @@ export default () => {
             } else if (renderProps) {
                 // return with content to respond to client
                 templateLocals.content = renderToString(<RoutingContext {...renderProps} />);
+                //Set page title from innermost title in page or default to dictionary
+                templateLocals.title = DocumentTitle.rewind() || `Essential UI`;
                 // send response to client
                 res.status(200).send(layout(templateLocals));
             } else {
+                //Set page title from innermost title in page or default to dictionary
+                templateLocals.title = 'Essential UI | Page not found';
                 res.status(404).send('Not found')
             }
         })

@@ -39,7 +39,7 @@ var colors = {
 var styles = {
     base: {
         border: '1px solid',
-        borderRadius: 50,
+        borderRadius: 6,
         cursor: 'pointer',
         lineHeight: 1,
         textAlign: 'center',
@@ -92,16 +92,17 @@ var Button = (function (_Component) {
     }, {
         key: 'propTypes',
         value: {
+            buttonType: _react.PropTypes.oneOf(BUTTON_TYPES),
+            href: _react2['default'].PropTypes.string,
             size: _react.PropTypes.oneOf(BUTTON_SIZES),
-            text: _react.PropTypes.string,
-            type: _react.PropTypes.oneOf(BUTTON_TYPES)
+            text: _react.PropTypes.string
         },
         enumerable: true
     }, {
         key: 'defaultProps',
         value: {
-            size: 'md',
-            type: 'primary'
+            buttonType: 'primary',
+            size: 'md'
         },
         enumerable: true
     }]);
@@ -124,21 +125,27 @@ var Button = (function (_Component) {
     }, {
         key: 'render',
         value: function render() {
-            var type = this.props.type;
+            var buttonType = this.props.buttonType;
             var size = this.props.size;
             var text = this.props.text;
+            var href = this.props.href;
 
-            var style = _Object$assign({}, styles.base, styles[type], styles[size]);
-
+            var style = _Object$assign({}, styles.base, styles[buttonType], styles[size]);
             if (this.state.hovered) {
-                style = _Object$assign({}, styles.base, styles[type], styles[size], styles[type].hovered);
+                style = _Object$assign({}, styles.base, styles[buttonType], styles[size], styles[buttonType].hovered);
             }
 
-            return _react2['default'].createElement(
-                'button',
-                { onMouseEnter: this.toggleHover, onMouseLeave: this.toggleHover, style: style, title: text, type: 'submit' },
-                text
-            );
+            var props = _Object$assign({}, { style: style, onMouseEnter: this.toggleHover, onMouseLeave: this.toggleHover, type: 'submit', href: { href: href } }, this.props);
+
+            var tag = 'button';
+            if (href) {
+                tag = 'a';
+                delete props.type;
+            } else {
+                delete props.href;
+            }
+
+            return _react2['default'].createElement(tag, props, text);
         }
     }]);
 
