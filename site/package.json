@@ -12,7 +12,7 @@
     "site": "node index.js"
   },
   "engines": {
-    "node": ">=4.1.0"
+    "node": ">=4.2.0"
   },
   "dependencies": {
     "babel": "^5.8.29",
@@ -23,7 +23,7 @@
     "react": "^0.14.3",
     "react-document-title": "^2.0.1",
     "react-dom": "^0.14.3",
-    "react-router": "^1.0.0"
+    "react-router": "^1.0.2"
   },
   "devDependencies": {}
 }

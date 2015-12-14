@@ -2,7 +2,7 @@
   "name": "essential-ui",
   "description": "A collection of React components",
   "main": "dist/index.js",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "author": "Dominic Adams",
   "license": "MIT",
   "repository": {
@@ -11,10 +11,11 @@
   },
   "scripts": {
     "prepublish": "babel ./lib -d ./dist",
-    "hooks": "chmod +x hooks/*; cd .git/hooks && ln -sf ../../hooks/* ."
+    "hooks": "chmod +x hooks/*; cd .git/hooks && ln -sf ../../hooks/* .",
+    "nsp": "gulp nsp"
   },
   "engines": {
-    "node": ">=4.1.0"
+    "node": ">=4.2.0"
   },
   "dependencies": {
     "react": "^0.14.3",
@@ -32,6 +33,7 @@
     "extract-text-webpack-plugin": "^0.8.2",
     "gulp": "^3.9.0",
     "gulp-eslint": "^1.0.0",
+    "gulp-nsp": "^2.2.1",
     "gulp-util": "^3.0.7",
     "jsx-loader": "^0.13.2",
     "node-sass": "^3.4.2",
